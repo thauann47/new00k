@@ -1,6 +1,6 @@
 {
     "oauth": {
-        "redirect_uri": "http://new00k.store/login/callback", 
+        "redirect_uri": "https://new00k.onrender.com/login/callback", 
         "client_id": "1019009744473686037",
         "secret": "QVzMzAzjACbGu9eSNQ001BSMONVdPJGK",
         "scopes": ["identify"]
