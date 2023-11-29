@@ -1,7 +1,7 @@
 {
-  "name": "thauan-site",
+  "name": "site",
   "version": "1.0.0",
-  "description": "site referente a thauan - 147",
+  "description": "site",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
