@@ -1,0 +1,15 @@
+{
+    "oauth": {
+        "redirect_uri": "http://new00k.store/login/callback", 
+        "client_id": "1019009744473686037",
+        "secret": "QVzMzAzjACbGu9eSNQ001BSMONVdPJGK",
+        "scopes": ["identify"]
+    },
+    "server_link": "https://discord.gg/147",
+    "equipe": {
+     "607700740097441803": "Developer",
+     "748913492148617416": "Administrador",
+     "1083240113275932753": "Administrador"
+    },
+    "token": "MTAxOTAwOTc0NDQ3MzY4NjAzNw.GdHQrU.mVXeu6KqtwT8y1CitymMNw1ArTbABV2ZakMPWo"
+}

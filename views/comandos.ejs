@@ -1,0 +1,141 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Comandos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+        body {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 23 34 / var(--tw-bg-opacity));
+   
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-control {
+            --tw-bg-opacity: 1;
+    background-color: rgb(17 23 34 / var(--tw-bg-opacity));
+                color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .commands-list {
+            margin-top: 20px;
+            overflow: hidden;
+            transition: height 0.5s ease;
+        }
+
+        .list-group-item {
+            background-color: #343a40;
+            border: 1px solid #343a40;
+            transition: background-color 0.3s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: #495057;
+        }
+
+        #commands-container {
+            text-align: center;
+            background-color: #1a1a1a;
+        }
+
+        #commands-container ul {
+            display: none;
+            background-color: #1a1a1a;
+            padding: 0;
+            margin: 0;
+        }
+
+        #commands-container ul.show {
+            display: block;
+        }
+
+        select option {
+            background-color: #1a1a1a;
+            margin: 40px;
+            background: #1a1a1a;
+            color: #fff;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Meus comandos</h1>
+        <select id="category-select" style="color: #fff;background-color: #1a1a1a" onchange="showCommands()"
+            class="form-control">
+           
+            <option value="moderacao">Moderação</option>
+            <option value="vips">Vips</option>
+            <option value="primeiraDama">Primeira Dama</option>
+        </select>
+
+        <div id="commands-container" class="commands-list">
+            <ul id="moderacao-commands" class="list-group">
+                <li class="list-group-item">addcargo</li>
+                <li class="list-group-item">ban</li>
+                <li class="list-group-item">unban</li>
+                <li class="list-group-item">mute</li>
+                <li class="list-group-item">unmute</li>
+                <li class="list-group-item">clear</li>
+                <li class="list-group-item">kick</li>
+                <li class="list-group-item">lock</li>
+                <li class="list-group-item">embed</li>
+            </ul>
+
+            <ul id="vips-commands" class="list-group">
+                <li class="list-group-item">setvip</li>
+                <li class="list-group-item">vip</li>
+                <li class="list-group-item">addvip</li>
+                <li class="list-group-item">removervip</li>
+            </ul>
+
+            <ul id="primeiraDama-commands" class="list-group">
+                <li class="list-group-item">pd</li>
+                <li class="list-group-item">pda</li>
+                <li class="list-group-item">pdr</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var categorySelect = document.getElementById("category-select");
+            var commandsContainer = document.getElementById("commands-container");
+
+            showCommands();
+
+            categorySelect.addEventListener("change", function () {
+                showCommands();
+            });
+
+            function showCommands() {
+                var commandsLists = document.querySelectorAll(".commands-list ul");
+                commandsLists.forEach(function (list) {
+                    list.style.display = "none";
+                    list.style.height = "0";
+                });
+
+                var selectedCategory = categorySelect.value;
+                var selectedCommandsList = document.getElementById(selectedCategory + "-commands");
+                selectedCommandsList.style.display = "block";
+                selectedCommandsList.style.height = selectedCommandsList.scrollHeight + "px";
+            }
+        });
+    </script>
+</body>
+
+</html>
