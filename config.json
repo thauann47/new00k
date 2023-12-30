@@ -1,15 +1,14 @@
 {
     "oauth": {
         "redirect_uri": "https://new00k.onrender.com/login/callback", 
-        "client_id": "1019009744473686037",
-        "secret": "QVzMzAzjACbGu9eSNQ001BSMONVdPJGK",
+        "client_id": "1190458416909537290",
+        "secret": "UYrodAed6WYet7pXje_H79cwVWCO9S-_",
         "scopes": ["identify"]
     },
     "server_link": "https://discord.gg/9QeUmE78AV",
     "equipe": {
      "607700740097441803": "Developer",
-     "748913492148617416": "Administrador",
-     "1083240113275932753": "Administrador"
+     "748913492148617416": "Administrador"
     },
-    "token": "MTAxOTAwOTc0NDQ3MzY4NjAzNw.GdHQrU.mVXeu6KqtwT8y1CitymMNw1ArTbABV2ZakMPWo"
+    "token": "MTE5MDQ1ODQxNjkwOTUzNzI5MA.GLZFve.AuahX8RRSAXYcxkalGXWw_BbYm4U4-Ce9i1FlQ"
 }
