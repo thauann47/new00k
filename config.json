@@ -1,6 +1,6 @@
 {
     "oauth": {
-        "redirect_uri": "https://new00k.onrender.com/login/callback", 
+        "redirect_uri": "https://new00k.vercel.app/login/callback", 
         "client_id": "1190458416909537290",
         "secret": "QCATdPwfpCXij4DwtDRpbvZJ6X0uu479",
         "scopes": ["identify"]
