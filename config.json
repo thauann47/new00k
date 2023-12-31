@@ -2,7 +2,7 @@
     "oauth": {
         "redirect_uri": "https://new00k.onrender.com/login/callback", 
         "client_id": "1190458416909537290",
-        "secret": "UYrodAed6WYet7pXje_H79cwVWCO9S-_",
+        "secret": "QCATdPwfpCXij4DwtDRpbvZJ6X0uu479",
         "scopes": ["identify"]
     },
     "server_link": "https://discord.gg/9QeUmE78AV",
