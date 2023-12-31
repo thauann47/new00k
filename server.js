@@ -8,7 +8,7 @@ const app = express();
 const cors = require('cors');
 const moment = require('moment');
 moment.locale('pt-BR')
-const port = process.env.port || 80
+const port = process.env.port || 443
 
 //INICIANDO TODAS AS INTENTS
 const client = new Client({
