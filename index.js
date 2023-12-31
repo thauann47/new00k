@@ -7,6 +7,7 @@ const config = require('./config.json');
 const app = express();
 const cors = require('cors');
 const moment = require('moment');
+const path = require('path')
 moment.locale('pt-BR')
 const port = process.env.port || 443
 
@@ -18,8 +19,9 @@ const client = new Client({
 });
 
 //SETANDO OS MIDDLEWARES
+app.set("views", path.join(__dirname, "views"));
 app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('./public'));
 app.use(cors());
 app.use(require('express-session')({
   "secret": require('crypto').randomBytes(64).toString('hex'),
